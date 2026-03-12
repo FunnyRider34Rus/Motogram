@@ -6,6 +6,8 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.secrets)
+    alias(libs.plugins.vk.placeholder)
 }
 
 android {
@@ -38,6 +40,10 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
+    secrets {
+        defaultPropertiesFileName = "local.properties"
+    }
+
     kotlin {
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_11)
@@ -64,6 +70,10 @@ dependencies {
     //Navigation
     implementation(libs.androidx.navigation)
     implementation(libs.androidx.navigation.hilt)
+    //VKID
+    implementation(libs.vk.id)
+    implementation(libs.vk.id.support)
+    implementation(libs.vk.id.onetap)
     //Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
