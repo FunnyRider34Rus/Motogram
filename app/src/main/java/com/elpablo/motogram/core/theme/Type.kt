@@ -1,4 +1,4 @@
-package com.elpablo.motogram.ui.theme
+package com.elpablo.motogram.core.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

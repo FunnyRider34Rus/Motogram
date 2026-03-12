@@ -1,6 +1,5 @@
-package com.elpablo.motogram.ui.theme
+package com.elpablo.motogram.core.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

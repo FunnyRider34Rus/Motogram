@@ -1,4 +1,4 @@
-package com.elpablo.motogram.ui.theme
+package com.elpablo.motogram.core.theme
 
 import androidx.compose.ui.graphics.Color
 
