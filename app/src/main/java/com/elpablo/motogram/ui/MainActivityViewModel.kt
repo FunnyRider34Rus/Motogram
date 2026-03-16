@@ -1,6 +1,5 @@
 package com.elpablo.motogram.ui
 
-import android.util.Log
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
@@ -17,12 +16,11 @@ class MainActivityViewModel @Inject constructor(): ViewModel() {
 
     init {
         if (VKID.instance.accessToken?.userID == null) {
-            _startDestination.value = Screen.DASHBOARD.route
-            Log.d("MG_DEBUG", "Goto Dashboard")
+            _startDestination.value = Screen.AUTH.route
+
         }
         else {
-            _startDestination.value = Screen.AUTH.route
-            Log.d("MG_DEBUG", "Goto Auth")
+            _startDestination.value = Screen.DASHBOARD.route
         }
     }
 }

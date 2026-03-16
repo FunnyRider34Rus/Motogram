@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Motogram</string>
+    <string name="screen_auth_title">Авторизация</string>
+    <string name="screen_dashboard_title">Лента</string>
+    <string name="screen_ride_title">Прохват</string>
+    <string name="screen_chats_title">Чаты</string>
+    <string name="screen_settings_title">Настройки</string>
 </resources>

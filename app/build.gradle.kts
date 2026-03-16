@@ -18,7 +18,7 @@ android {
 
     defaultConfig {
         applicationId = "com.elpablo.motogram"
-        minSdk = 23
+        minSdk = 24
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -50,6 +50,7 @@ android {
         }
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
 }
@@ -74,6 +75,8 @@ dependencies {
     implementation(libs.vk.id)
     implementation(libs.vk.id.support)
     implementation(libs.vk.id.onetap)
+    //Glide
+    implementation(libs.glide)
     //Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

@@ -15,6 +15,7 @@ ksp = "2.2.21-2.0.4"
 vk-placeholder = "1.1.0"
 vk-id = "2.6.0"
 gradleSecret = "2.0.1"
+glide = "1.0.0-alpha.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -39,6 +40,7 @@ androidx-navigation-hilt = { group = "androidx.hilt", name = "hilt-navigation-co
 vk-id = { group = "com.vk.id", name = "vkid", version.ref = "vk-id" }
 vk-id-support = { group = "com.vk.id", name = "vk-sdk-support", version.ref = "vk-id" }
 vk-id-onetap = { group = "com.vk.id", name = "onetap-compose", version.ref = "vk-id" }
+glide = { group = "com.github.bumptech.glide", name = "compose", version.ref = "glide" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
